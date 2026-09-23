@@ -1,0 +1,15 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      // F5 obre Chrome a l'aplicació i hi connecta el depurador:
+      // pots posar punts d'interrupció als .tsx i veure l'estat de les rutes.
+      // Abans, engega el servidor amb la tasca "npm: dev" (Ctrl+Maj+B).
+      "name": "Depura a Chrome (Vite)",
+      "type": "chrome",
+      "request": "launch",
+      "url": "http://localhost:5173",
+      "webRoot": "${workspaceFolder}"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  // Extensions recomanades per al mòdul. En obrir la carpeta, VS Code
+  // et proposarà instal·lar les que et falten.
+  "recommendations": [
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint",
+    "dsznajder.es7-react-js-snippets",
+    "formulahendry.auto-rename-tag",
+    "usernamehw.errorlens",
+    "ritwickdey.liveserver"
+  ]
+}

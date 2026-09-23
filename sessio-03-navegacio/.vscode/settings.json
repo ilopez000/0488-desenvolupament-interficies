@@ -1,0 +1,24 @@
+{
+  // Aspecte i format del codi del mòdul 0488
+  "editor.tabSize": 2,
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.rulers": [100],
+  "files.eol": "\n",
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+
+  // Amaga a l'explorador el que no toquem a classe
+  "files.exclude": {
+    "**/node_modules": true,
+    "**/dist": true
+  },
+
+  // TypeScript: fa servir la versió del projecte, no la que porta VS Code
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+
+  // Terminal integrat obert a la carpeta del projecte
+  "terminal.integrated.cwd": "${workspaceFolder}"
+}
