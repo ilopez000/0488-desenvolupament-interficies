@@ -1,0 +1,15 @@
+:root { --tinta: #1f2a30; --marca: #e1211d; --suau: #f3f5f6; --vora: #c9d3d6; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, sans-serif; color: var(--tinta); }
+.pagina { min-height: 100dvh; display: flex; flex-direction: column; }
+.capcalera { display: flex; gap: 1.5rem; align-items: center; padding: 1rem 1.5rem; border-bottom: 2px solid var(--vora); }
+.marca { font-weight: 800; color: var(--marca); }
+.capcalera nav { display: flex; gap: 1rem; }
+.enllac { text-decoration: none; color: var(--tinta); padding: .25rem .5rem; border-radius: 6px; }
+.enllac.actiu { background: var(--marca); color: #fff; }
+.contingut { flex: 1; padding: 1.5rem; }
+.peu { padding: 1rem 1.5rem; background: var(--suau); font-size: .9rem; }
+.boto { display: inline-block; margin-top: 1rem; padding: .5rem 1rem; border: 0; border-radius: 6px; background: var(--marca); color: #fff; text-decoration: none; cursor: pointer; font: inherit; }
+.camp { padding: .5rem; border: 1px solid var(--vora); border-radius: 6px; font: inherit; }
+.llista { line-height: 1.9; padding-left: 1.2rem; }
+.preu { font-size: 1.3rem; font-weight: 700; }
