@@ -1,0 +1,19 @@
+.graella {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: var(--espai-3);
+}
+
+.cercador {
+  width: 100%;
+  max-width: 22rem;
+  margin-bottom: var(--espai-4);
+  padding: var(--espai-2);
+  border: 1px solid var(--color-vora);
+  border-radius: var(--radi);
+  font: inherit;
+}
+
+.buit {
+  color: var(--color-teal);
+}

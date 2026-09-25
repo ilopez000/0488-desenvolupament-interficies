@@ -1,0 +1,19 @@
+.hero {
+  padding: var(--espai-5) var(--espai-4);
+  border-radius: var(--radi);
+  background: var(--color-suau);
+  text-align: center;
+}
+
+.reclam {
+  max-width: 34rem;
+  margin: 0 auto var(--espai-3);
+  color: var(--color-teal);
+}
+
+.graella {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: var(--espai-3);
+  margin-top: var(--espai-4);
+}
