@@ -1,0 +1,22 @@
+.boto {
+  display: inline-block;
+  padding: var(--espai-2) var(--espai-3);
+  border: none;
+  border-radius: var(--radi);
+  background: var(--color-marca);
+  color: #fff;
+  font: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.boto:hover {
+  filter: brightness(0.92);
+}
+
+/* Variant secundària: mateixa forma, colors invertits */
+.secundari {
+  background: transparent;
+  color: var(--color-marca);
+  border: 2px solid var(--color-marca);
+}

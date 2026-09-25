@@ -1,0 +1,31 @@
+.targeta {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espai-2);
+  padding: var(--espai-3);
+  border: 1px solid var(--color-vora);
+  border-radius: var(--radi);
+  box-shadow: var(--ombra);
+  background: var(--color-fons);
+}
+
+.titol {
+  margin: 0;
+  font-size: 1.15rem;
+}
+
+.pais {
+  color: var(--color-teal);
+  font-size: 0.9rem;
+}
+
+.preu {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.enllac {
+  align-self: flex-start;
+  color: var(--color-marca);
+  font-weight: 600;
+}

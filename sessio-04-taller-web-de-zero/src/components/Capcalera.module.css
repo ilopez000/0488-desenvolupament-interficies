@@ -1,0 +1,43 @@
+/* Estils NOMÉS de la capçalera. El nom de cada classe el transforma Vite
+   en un nom únic (capcalera_barra_a1b2c3), així que no pot xocar amb cap altre. */
+
+.barra {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--espai-3);
+  padding: var(--espai-3) var(--espai-4);
+  border-bottom: 2px solid var(--color-vora);
+  background: var(--color-fons);
+}
+
+.marca {
+  font-weight: 800;
+  font-size: 1.2rem;
+  color: var(--color-marca);
+  text-decoration: none;
+}
+
+.menu {
+  display: flex;
+  gap: var(--espai-2);
+}
+
+.enllac {
+  padding: var(--espai-1) var(--espai-2);
+  border-radius: var(--radi);
+  color: var(--color-fosc);
+  text-decoration: none;
+}
+
+/* :not(.actiu) evita que el fons gris del hover tapi el de l'enllaç actiu:
+   .enllac:hover té més especificitat que .actiu i, si no, guanyaria. */
+.enllac:hover:not(.actiu) {
+  background: var(--color-suau);
+}
+
+/* Estat "aquesta és la pàgina on soc" */
+.actiu {
+  background: var(--color-marca);
+  color: #fff;
+}

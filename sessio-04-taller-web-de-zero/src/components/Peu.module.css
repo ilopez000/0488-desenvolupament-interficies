@@ -1,0 +1,8 @@
+.peu {
+  margin-top: var(--espai-5);
+  padding: var(--espai-3) var(--espai-4);
+  background: var(--color-suau);
+  color: var(--color-teal);
+  font-size: 0.9rem;
+  text-align: center;
+}
