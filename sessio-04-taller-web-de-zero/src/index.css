@@ -1,0 +1,65 @@
+/* ---------------------------------------------------------------
+   Full d'estils global de PratViatges.
+   Aquí hi van dues coses i només dues:
+   1) els tokens (colors, mides, radis) com a variables CSS
+   2) els estils base de la pàgina (body, títols, enllaços)
+   Tot el que sigui d'un component concret va al seu .module.css.
+   --------------------------------------------------------------- */
+
+:root {
+  /* Colors corporatius */
+  --color-marca: #e1211d;
+  --color-fosc: #1f2a30;
+  --color-teal: #4c6971;
+  --color-suau: #f3f5f6;
+  --color-vora: #c9d3d6;
+  --color-fons: #ffffff;
+
+  /* Espais: sempre múltiples de 4px, així tot queda alineat */
+  --espai-1: 0.25rem;
+  --espai-2: 0.5rem;
+  --espai-3: 1rem;
+  --espai-4: 1.5rem;
+  --espai-5: 2.5rem;
+
+  /* Altres */
+  --radi: 10px;
+  --ombra: 0 2px 8px rgba(31, 42, 48, 0.08);
+  --ample-maxim: 1000px;
+}
+
+/* El reset mínim: el model de caixa que tothom espera */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  color: var(--color-fosc);
+  background: var(--color-fons);
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 0 0 var(--espai-3);
+}
+
+h2 {
+  font-size: 1.3rem;
+  margin: 0 0 var(--espai-2);
+}
+
+a {
+  color: var(--color-marca);
+}
+
+/* Contenidor centrat que farem servir a totes les pàgines */
+.contenidor {
+  max-width: var(--ample-maxim);
+  margin: 0 auto;
+  padding: var(--espai-4) var(--espai-3);
+}
