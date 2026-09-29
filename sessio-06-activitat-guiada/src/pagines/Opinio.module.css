@@ -1,0 +1,12 @@
+.formulari { max-width: 520px; }
+
+.boto {
+  margin-top: 20px;
+  padding: 10px 18px;
+  border: 0;
+  border-radius: var(--radi);
+  background: var(--color-fosc);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
