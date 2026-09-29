@@ -1,0 +1,111 @@
+/* Variables de color i estils generals de PratShop (sessió 5) */
+:root {
+  --color-principal: #e1211d;
+  --color-fosc: #1f2a30;
+  --color-suau: #4c6971;
+  --color-fons: #f3f5f6;
+  --color-vora: #c9d3d6;
+  --radi: 10px;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  color: var(--color-fosc);
+}
+
+* { box-sizing: border-box; }
+
+body { margin: 0; background: #fff; }
+
+main {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 24px 16px 64px;
+}
+
+h1 { font-size: 1.6rem; margin: 0 0 4px; }
+h3 { margin: 4px 0; font-size: 1rem; }
+p.subtitol { color: var(--color-suau); margin: 0 0 20px; }
+
+/* Capçalera i menú */
+.capcalera {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 14px 24px;
+  border-bottom: 1px solid var(--color-vora);
+}
+.marca { font-weight: 700; font-size: 1.1rem; color: var(--color-principal); text-decoration: none; }
+.menu { display: flex; gap: 8px; }
+.enllac {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 6px 12px; border-radius: var(--radi);
+  color: var(--color-fosc); text-decoration: none; border: 1px solid transparent;
+}
+.enllac.actiu { background: var(--color-fosc); color: #fff; }
+.globus {
+  background: var(--color-principal);
+  color: #fff;
+  border-radius: 999px;
+  padding: 0 8px;
+  font-size: 0.8rem;
+  line-height: 1.6rem;
+}
+
+/* Catàleg */
+.filtres { display: flex; gap: 12px; margin-bottom: 20px; }
+.filtres input { flex: 1; }
+.graella {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 16px;
+}
+.targeta {
+  border: 1px solid var(--color-vora);
+  border-radius: var(--radi);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.categoria { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.04em; color: var(--color-suau); }
+.preu { margin: 0; font-weight: 700; }
+.estoc { margin: 0 0 12px; font-size: 0.85rem; color: var(--color-suau); }
+.buit {
+  color: var(--color-suau); background: var(--color-fons);
+  border-radius: var(--radi); padding: 24px; text-align: center;
+}
+
+/* Carro */
+.taula { width: 100%; border-collapse: collapse; margin-bottom: 16px; }
+.taula th, .taula td { text-align: left; padding: 10px 8px; border-bottom: 1px solid var(--color-vora); }
+.taula tfoot th { font-size: 1.05rem; }
+.unitats { display: inline-block; min-width: 2.5rem; text-align: center; font-weight: 600; }
+
+/* Formulari */
+.formulari { max-width: 520px; }
+input, select, textarea, button { font: inherit; }
+input[type='text'], input[type='email'], textarea, select {
+  width: 100%;
+  padding: 9px 12px;
+  border: 1px solid var(--color-vora);
+  border-radius: var(--radi);
+  background: #fff;
+}
+label { display: block; font-weight: 600; margin: 14px 0 4px; }
+.error { color: var(--color-principal); font-size: 0.85rem; margin: 4px 0 0; }
+.correcte { background: #eaf1dd; border-radius: var(--radi); padding: 12px 16px; }
+
+/* Botons */
+button {
+  margin-top: auto;
+  padding: 9px 14px;
+  border: 0;
+  border-radius: var(--radi);
+  background: var(--color-fosc);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+button:disabled { background: var(--color-vora); color: var(--color-suau); cursor: not-allowed; }
+button.secundari { background: #fff; color: var(--color-fosc); border: 1px solid var(--color-vora); }
+.taula button { padding: 4px 10px; margin: 0; }
+form button { margin-top: 20px; }
