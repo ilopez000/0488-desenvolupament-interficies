@@ -1,0 +1,23 @@
+.targeta {
+  border: 1px solid var(--color-vora);
+  border-radius: var(--radi);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.genere { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.04em; color: var(--color-suau); }
+.titol { margin: 2px 0; font-size: 1rem; }
+.autor { margin: 0 0 12px; font-size: 0.88rem; color: var(--color-suau); }
+
+.boto, .botoActiu {
+  margin-top: auto;
+  padding: 9px 12px;
+  border-radius: var(--radi);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.boto { border: 1px solid var(--color-vora); background: #fff; color: var(--color-fosc); }
+.botoActiu { border: 1px solid var(--color-principal); background: var(--color-principal); color: #fff; }

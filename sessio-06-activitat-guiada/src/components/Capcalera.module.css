@@ -1,0 +1,21 @@
+.capcalera {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 14px 24px;
+  border-bottom: 1px solid var(--color-vora);
+}
+
+.marca { font-weight: 700; font-size: 1.1rem; color: var(--color-principal); }
+
+.preferits { display: inline-flex; align-items: center; gap: 8px; color: var(--color-suau); font-weight: 600; }
+
+.globus {
+  background: var(--color-principal);
+  color: #fff;
+  border-radius: 999px;
+  padding: 0 8px;
+  font-size: 0.8rem;
+  line-height: 1.6rem;
+}
