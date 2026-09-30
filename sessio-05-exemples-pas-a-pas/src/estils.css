@@ -1,0 +1,65 @@
+/* Estils dels exemples de la sessió 5 (mateixos colors que PratShop) */
+:root {
+  --color-principal: #e1211d;
+  --color-fosc: #1f2a30;
+  --color-suau: #4c6971;
+  --color-fons: #f3f5f6;
+  --color-vora: #c9d3d6;
+  --color-be: #1d7a46;
+  --radi: 10px;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  color: var(--color-fosc);
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; background: #fff; }
+
+main { max-width: 980px; margin: 0 auto; padding: 24px 16px 64px; }
+h1 { font-size: 1.6rem; margin: 0 0 4px; }
+h3 { margin: 4px 0 10px; font-size: 1rem; }
+p.subtitol { color: var(--color-suau); margin: 0 0 20px; }
+code, pre { font-family: ui-monospace, Consolas, monospace; font-size: 0.9rem; }
+pre { background: var(--color-fons); padding: 12px; border-radius: var(--radi); overflow-x: auto; }
+
+.capcalera { padding: 14px 24px; border-bottom: 1px solid var(--color-vora); }
+.marca { font-weight: 700; font-size: 1.1rem; color: var(--color-principal); }
+
+.menu { display: flex; flex-wrap: wrap; gap: 8px; max-width: 980px; margin: 0 auto; padding: 16px 16px 0; }
+
+button {
+  font: inherit; cursor: pointer;
+  padding: 8px 14px; border-radius: var(--radi);
+  border: 1px solid var(--color-fosc); background: var(--color-fosc); color: #fff;
+}
+button.secundari, button.pestanya { background: #fff; color: var(--color-fosc); border-color: var(--color-vora); }
+button.pestanya.activa { background: var(--color-fosc); color: #fff; border-color: var(--color-fosc); }
+
+input[type='text'], input[type='search'], input[type='email'], input[type='number'], select {
+  font: inherit; padding: 8px 10px; border: 1px solid var(--color-vora); border-radius: var(--radi);
+  min-width: 0; flex: 1;
+}
+
+.caixa { border: 1px solid var(--color-vora); border-radius: var(--radi); padding: 16px; margin-bottom: 16px; }
+.caixa.malament { border-color: var(--color-principal); }
+.caixa.be { border-color: var(--color-be); }
+.dues-columnes { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; }
+.dues-columnes > .caixa { margin-bottom: 0; }
+.botons { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+
+.xifra { font-size: 2.4rem; font-weight: 700; margin: 4px 0 12px; }
+.xifra.petita { font-size: 1.4rem; }
+.nota { color: var(--color-suau); font-size: 0.9rem; }
+.etiqueta { color: var(--color-suau); font-size: 0.85rem; }
+.error { color: var(--color-principal); font-size: 0.9rem; margin: 0; }
+.correcte { color: var(--color-be); font-weight: 600; }
+.globus { background: var(--color-principal); color: #fff; border-radius: 999px; padding: 0 8px; font-size: 0.8rem; }
+
+.sense-punts { list-style: none; padding: 0; }
+.fila { display: flex; align-items: center; gap: 8px; padding: 6px 0; }
+.fila span { flex: 1; }
+.registre { padding-left: 20px; font-size: 0.9rem; }
+
+.formulari { display: flex; flex-direction: column; gap: 6px; }
+.formulari label { font-weight: 600; margin-top: 8px; }
+.formulari button { margin-top: 12px; align-self: flex-start; }
+.casella { display: flex; align-items: center; gap: 8px; font-weight: 400 !important; }
