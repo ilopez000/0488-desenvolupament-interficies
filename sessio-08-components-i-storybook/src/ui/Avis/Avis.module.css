@@ -1,0 +1,77 @@
+.caixa {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--espai-3);
+  padding: var(--espai-3);
+  border-left: 6px solid;
+  border-radius: var(--radi);
+  font-family: var(--font);
+  color: var(--color-fosc);
+}
+
+.icona {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%;
+  color: #fff;
+  font-weight: 700;
+}
+
+.cos {
+  flex: 1;
+}
+
+.titol {
+  margin: 0 0 var(--espai-1);
+  font-weight: 700;
+}
+
+.tancar {
+  flex: none;
+  border: none;
+  background: transparent;
+  font-size: 1.4rem;
+  line-height: 1;
+  cursor: pointer;
+  color: inherit;
+}
+.tancar:focus-visible {
+  outline: none;
+  box-shadow: var(--focus);
+  border-radius: 4px;
+}
+
+.info {
+  background: var(--color-info-fons);
+  border-color: var(--color-info);
+}
+.info .icona {
+  background: var(--color-info);
+}
+
+.exit {
+  background: var(--color-exit-fons);
+  border-color: var(--color-exit);
+}
+.exit .icona {
+  background: var(--color-exit);
+}
+
+.avis {
+  background: var(--color-avis-fons);
+  border-color: var(--color-avis);
+}
+.avis .icona {
+  background: var(--color-avis);
+}
+
+.error {
+  background: var(--color-perill-fons);
+  border-color: var(--color-perill);
+}
+.error .icona {
+  background: var(--color-perill);
+}
