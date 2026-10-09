@@ -1,0 +1,25 @@
+.insignia {
+  display: inline-block;
+  padding: 2px var(--espai-2);
+  border-radius: var(--radi-rodo);
+  font: 700 0.75rem var(--font);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.neutre {
+  background: var(--color-suau);
+  color: var(--color-fosc);
+}
+.exit {
+  background: var(--color-exit-fons);
+  color: var(--color-exit);
+}
+.avis {
+  background: var(--color-avis-fons);
+  color: var(--color-avis);
+}
+.perill {
+  background: var(--color-perill-fons);
+  color: var(--color-perill);
+}
