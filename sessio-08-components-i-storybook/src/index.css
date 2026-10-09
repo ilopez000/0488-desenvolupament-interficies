@@ -1,0 +1,47 @@
+/* Estils de la pàgina d'exemple (no de la llibreria) */
+body {
+  margin: 0;
+  font-family: var(--font);
+  color: var(--color-fosc);
+  background: var(--color-suau);
+}
+
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: var(--espai-4) var(--espai-3);
+  display: grid;
+  gap: var(--espai-3);
+}
+
+h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.targeta {
+  display: grid;
+  gap: var(--espai-2);
+  padding: var(--espai-4);
+  background: var(--color-fons);
+  border: 1px solid var(--color-vora);
+  border-radius: var(--radi);
+}
+
+.targeta h2 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.preu {
+  margin: 0;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.fila {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--espai-2);
+}
