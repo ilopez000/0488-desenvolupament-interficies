@@ -1,0 +1,39 @@
+/* ---------------------------------------------------------------
+   Tokens de PratShop UI: els valors que comparteixen tots els
+   components de la llibreria. Els components no escriuen mai un
+   color o una mida "a mà": sempre fan servir una d'aquestes variables.
+   --------------------------------------------------------------- */
+
+:root {
+  /* Colors de marca */
+  --color-marca: #e1211d;
+  --color-marca-fosc: #b81915;
+  --color-fosc: #1f2a30;
+  --color-teal: #4c6971;
+  --color-suau: #f3f5f6;
+  --color-vora: #c9d3d6;
+  --color-fons: #ffffff;
+
+  /* Colors d'estat (avisos i insígnies) */
+  --color-exit: #1e7a46;
+  --color-exit-fons: #e6f4ec;
+  --color-avis: #8a5a00;
+  --color-avis-fons: #fff4dc;
+  --color-perill: #b3261e;
+  --color-perill-fons: #fce9e8;
+  --color-info: #2f5d8a;
+  --color-info-fons: #e8f0f8;
+  --color-estrella: #f2a900;
+
+  /* Espais: múltiples de 4 px */
+  --espai-1: 0.25rem;
+  --espai-2: 0.5rem;
+  --espai-3: 1rem;
+  --espai-4: 1.5rem;
+
+  /* Altres */
+  --radi: 10px;
+  --radi-rodo: 999px;
+  --focus: 0 0 0 3px rgba(225, 33, 29, 0.35);
+  --font: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
