@@ -1,0 +1,30 @@
+.valoracio {
+  display: inline-flex;
+  gap: 2px;
+}
+
+.estrella {
+  font-size: 1.4rem;
+  line-height: 1;
+  color: var(--color-vora);
+}
+
+.plena {
+  color: var(--color-estrella);
+}
+
+/* Quan les estrelles són botons, en traiem l'aspecte de botó */
+.clicable {
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+.clicable:hover {
+  transform: scale(1.15);
+}
+.clicable:focus-visible {
+  outline: none;
+  box-shadow: var(--focus);
+  border-radius: 4px;
+}
