@@ -1,0 +1,80 @@
+.boto {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--espai-2);
+  border: 2px solid transparent;
+  border-radius: var(--radi);
+  font: 600 1rem var(--font);
+  cursor: pointer;
+  transition: background-color 0.15s, filter 0.15s;
+}
+
+.boto:focus-visible {
+  outline: none;
+  box-shadow: var(--focus);
+}
+
+.boto:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+/* Variants */
+.primari {
+  background: var(--color-marca);
+  color: #fff;
+}
+.primari:hover:not(:disabled) {
+  background: var(--color-marca-fosc);
+}
+
+.secundari {
+  background: transparent;
+  color: var(--color-marca);
+  border-color: var(--color-marca);
+}
+.secundari:hover:not(:disabled) {
+  background: var(--color-perill-fons);
+}
+
+.perill {
+  background: var(--color-fosc);
+  color: #fff;
+}
+.perill:hover:not(:disabled) {
+  filter: brightness(1.25);
+}
+
+/* Mides */
+.petita {
+  padding: var(--espai-1) var(--espai-2);
+  font-size: 0.85rem;
+}
+.normal {
+  padding: var(--espai-2) var(--espai-3);
+}
+.gran {
+  padding: var(--espai-3) var(--espai-4);
+  font-size: 1.15rem;
+}
+
+.ampleComplet {
+  width: 100%;
+}
+
+/* Indicador de càrrega: un cercle que gira */
+.indicador {
+  width: 1em;
+  height: 1em;
+  border: 2px solid currentColor;
+  border-right-color: transparent;
+  border-radius: 50%;
+  animation: gira 0.7s linear infinite;
+}
+
+@keyframes gira {
+  to {
+    transform: rotate(360deg);
+  }
+}
