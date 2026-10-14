@@ -16,6 +16,7 @@ Una carpeta per sessió de classe. Cada carpeta és un projecte independent que 
 | 5 | [`sessio-05-exemples-pas-a-pas`](sessio-05-exemples-pas-a-pas) | **Exemples pas a pas de la sessió 5**: set exemples curts i independents, un per apartat del guió — per què cal l'estat, les regles de `useState`, esdeveniments, llista filtrada i `key`, formulari controlat, aixecar l'estat i `useEffect` + `localStorage` |
 | 6 | [`sessio-06-activitat-guiada`](sessio-06-activitat-guiada) | **Activitat guiada PratLlibres**: projecte de partida amb 10 `TODO` (cercador, filtre, `key`, preferits, globus, formulari controlat, `useEffect`) i 10 proves Vitest que els comproven amb `npm test` |
 | 8 | [`sessio-08-components-i-storybook`](sessio-08-components-i-storybook) | **PratShop UI** (inici de l'AEA2): components de llibreria amb una API ben dissenyada — props tipades i documentades amb TSDoc, valors per defecte, `ComponentProps<'button'>`, composició i esdeveniments — `Boto`, `Insignia`, `Avis` i `Valoracio`, amb les seves històries de **Storybook** (controls, actions, autodocs i addon d'accessibilitat) i una pàgina d'aparador que els fa servir |
+| 9 | [`sessio-09-hooks`](sessio-09-hooks) | **Els hooks i com fer-ne de propis**: set exemples molt curts — repàs de `useState`, `useEffect` i `useRef`, i quatre hooks propis (`useComptador`, `useDisclosure`, `useLocalStorage` i `useAmpladaFinestra`) amb les dues regles dels hooks comprovades per oxlint |
 
 ## Com executar un exemple
 
