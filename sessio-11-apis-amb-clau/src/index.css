@@ -1,0 +1,287 @@
+:root {
+  --vermell: #e1211d;
+  --fosc: #1f2a30;
+  --gris: #4c6971;
+  --vora: #c9d3d6;
+  --suau: #f3f5f6;
+  font-family: system-ui, 'Segoe UI', Roboto, sans-serif;
+  color: var(--fosc);
+  background: var(--suau);
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 24px 16px;
+  display: grid;
+  gap: 16px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+h2 {
+  margin: 0 0 4px;
+  font-size: 1.2rem;
+}
+
+section {
+  display: grid;
+  gap: 12px;
+}
+
+section > p {
+  margin: 0;
+}
+
+.pestanyes {
+  display: grid;
+  gap: 8px;
+}
+
+.grup {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+}
+
+.grup-nom {
+  width: 120px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--gris);
+}
+
+button {
+  font: inherit;
+  padding: 6px 12px;
+  border: 1px solid var(--vora);
+  border-radius: 6px;
+  background: white;
+  color: var(--fosc);
+  cursor: pointer;
+}
+
+button:hover {
+  border-color: var(--vermell);
+}
+
+button[aria-pressed='true'] {
+  background: var(--vermell);
+  border-color: var(--vermell);
+  color: white;
+}
+
+.targeta {
+  display: grid;
+  gap: 10px;
+  padding: 16px;
+  background: white;
+  border: 1px solid var(--vora);
+  border-radius: 8px;
+}
+
+.targeta p {
+  margin: 0;
+}
+
+.fila {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+label {
+  display: grid;
+  gap: 4px;
+}
+
+input[type='search'],
+input:not([type]),
+select {
+  font: inherit;
+  padding: 6px 8px;
+  border: 1px solid var(--vora);
+  border-radius: 6px;
+}
+
+input:focus-visible,
+button:focus-visible {
+  outline: 3px solid var(--vermell);
+  outline-offset: 2px;
+}
+
+.pregunta button {
+  width: 100%;
+  text-align: left;
+  border: none;
+  border-bottom: 1px solid var(--vora);
+  border-radius: 0;
+}
+
+.pregunta p {
+  padding: 8px 12px;
+}
+
+.nota {
+  font-size: 0.9rem;
+  color: var(--gris);
+}
+
+code {
+  margin-left: 6px;
+  padding: 1px 5px;
+  background: #edf1f2;
+  border-radius: 4px;
+  font-size: 0.85rem;
+}
+
+.pestanyes button {
+  font-size: 0.9rem;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.foto {
+  max-width: 100%;
+  max-height: 320px;
+  border-radius: 8px;
+  justify-self: start;
+}
+
+.error {
+  color: var(--vermell);
+  font-weight: 700;
+}
+
+.fitxa {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.fitxa img {
+  width: 120px;
+  height: 120px;
+  image-rendering: pixelated;
+  background: var(--suau);
+  border-radius: 8px;
+}
+
+.fitxa h3 {
+  margin: 0 0 4px;
+  text-transform: capitalize;
+}
+
+.llista {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 6px;
+}
+
+.llista li {
+  display: grid;
+  gap: 2px;
+  padding: 8px 10px;
+  border: 1px solid var(--vora);
+  border-radius: 6px;
+}
+
+a {
+  color: var(--vermell);
+}
+
+.targeta > button,
+.fila button {
+  justify-self: start;
+}
+
+/* ── Sessió 11 ─────────────────────────────────────────────── */
+
+.avis {
+  display: grid;
+  gap: 6px;
+  padding: 12px 14px;
+  background: #fff4f3;
+  border-left: 6px solid var(--vermell);
+  border-radius: 6px;
+}
+
+.avis p {
+  margin: 0;
+}
+
+.gran {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.fitxa img.icona-temps {
+  width: 100px;
+  height: 100px;
+  image-rendering: auto;
+  background: #dfe8eb;
+  border-radius: 50%;
+}
+
+.resum-temps {
+  display: grid;
+  gap: 4px;
+  padding: 10px 12px;
+  background: var(--suau);
+  border-radius: 6px;
+}
+
+.resum-temps p {
+  margin: 0;
+}
+
+.cartellera {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  gap: 12px;
+}
+
+.peli {
+  display: grid;
+  gap: 4px;
+  align-content: start;
+  font-size: 0.9rem;
+}
+
+.peli img,
+.sense-cartell {
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+  border-radius: 6px;
+  background: var(--suau);
+}
+
+.sense-cartell {
+  display: grid;
+  place-items: center;
+  color: var(--gris);
+  border: 1px dashed var(--vora);
+}
+
+footer {
+  padding-top: 8px;
+  border-top: 1px solid var(--vora);
+}
