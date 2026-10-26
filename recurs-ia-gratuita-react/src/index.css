@@ -1,0 +1,238 @@
+:root {
+  --vermell: #e1211d;
+  --fosc: #1f2a30;
+  --gris: #4c6971;
+  --vora: #c9d3d6;
+  --suau: #f3f5f6;
+  font-family: system-ui, 'Segoe UI', Roboto, sans-serif;
+  color: var(--fosc);
+  background: var(--suau);
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 24px 16px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr); /* que res no surti per la dreta al mòbil */
+  gap: 16px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+h2 {
+  margin: 0 0 4px;
+  font-size: 1.2rem;
+}
+
+section {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 12px;
+}
+
+section > p {
+  margin: 0;
+}
+
+.pestanyes {
+  display: grid;
+  gap: 8px;
+}
+
+.grup {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+}
+
+button {
+  font: inherit;
+  padding: 6px 12px;
+  border: 1px solid var(--vora);
+  border-radius: 6px;
+  background: white;
+  color: var(--fosc);
+  cursor: pointer;
+}
+
+button:hover {
+  border-color: var(--vermell);
+}
+
+button[aria-pressed='true'] {
+  background: var(--vermell);
+  border-color: var(--vermell);
+  color: white;
+}
+
+.targeta {
+  display: grid;
+  gap: 10px;
+  padding: 16px;
+  background: white;
+  border: 1px solid var(--vora);
+  border-radius: 8px;
+}
+
+.targeta p {
+  margin: 0;
+}
+
+.fila {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: end;
+  gap: 8px;
+}
+
+label {
+  display: grid;
+  gap: 4px;
+}
+
+input,
+select {
+  max-width: 100%;
+  font: inherit;
+  padding: 6px 8px;
+  border: 1px solid var(--vora);
+  border-radius: 6px;
+}
+
+input:focus-visible,
+select:focus-visible,
+button:focus-visible {
+  outline: 3px solid var(--vermell);
+  outline-offset: 2px;
+}
+
+.nota {
+  font-size: 0.9rem;
+  color: var(--gris);
+}
+
+code {
+  overflow-wrap: anywhere;
+  margin-left: 6px;
+  padding: 1px 5px;
+  background: #edf1f2;
+  border-radius: 4px;
+  font-size: 0.85rem;
+}
+
+.pestanyes button {
+  font-size: 0.9rem;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.error {
+  color: var(--vermell);
+  font-weight: 700;
+}
+
+a {
+  color: var(--vermell);
+}
+
+/* ── IA gratuïta: xatbot ───────────────────────────────────── */
+
+.xat {
+  margin: 0;
+  padding: 12px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  height: 360px;
+  overflow-y: auto;
+  background: var(--suau);
+  border-radius: 8px;
+}
+
+.bombolla {
+  max-width: 80%;
+  padding: 8px 12px;
+  border-radius: 12px;
+  white-space: pre-wrap; /* respecta els salts de línia de la IA */
+  line-height: 1.4;
+}
+
+.bombolla.user {
+  align-self: flex-end;
+  background: var(--vermell);
+  color: white;
+  border-bottom-right-radius: 4px;
+}
+
+.bombolla.assistant {
+  align-self: flex-start;
+  background: white;
+  border: 1px solid var(--vora);
+  border-bottom-left-radius: 4px;
+}
+
+.entrada-xat {
+  flex: 1;
+  min-width: 200px;
+}
+
+/* ── IA gratuïta: generador de tests ─────────────────────────── */
+
+.test {
+  display: grid;
+  gap: 12px;
+}
+
+.test h3 {
+  margin: 0;
+}
+
+.llista-preguntes {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 10px;
+}
+
+.opcions {
+  display: grid;
+  gap: 6px;
+}
+
+.opcions button {
+  text-align: left;
+}
+
+.opcions button:disabled {
+  opacity: 1;
+  cursor: default;
+}
+
+.opcions button.encert {
+  background: #e3f4e6;
+  border-color: #2e7d32;
+}
+
+.opcions button.errada {
+  background: #fff4f3;
+  border-color: var(--vermell);
+}
+
+footer {
+  padding-top: 8px;
+  border-top: 1px solid var(--vora);
+}
