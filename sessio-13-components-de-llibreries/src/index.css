@@ -1,0 +1,264 @@
+:root {
+  --vermell: #e1211d;
+  --fosc: #1f2a30;
+  --gris: #4c6971;
+  --vora: #c9d3d6;
+  --suau: #f3f5f6;
+  font-family: system-ui, 'Segoe UI', Roboto, sans-serif;
+  color: var(--fosc);
+  background: var(--suau);
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 24px 16px;
+  display: grid;
+  gap: 16px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+h2 {
+  margin: 0 0 4px;
+  font-size: 1.2rem;
+}
+
+h3 {
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+.exemple {
+  display: grid;
+  gap: 12px;
+}
+
+.exemple > p {
+  margin: 0;
+}
+
+.pestanyes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+button {
+  font: inherit;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border: 1px solid var(--vora);
+  border-radius: 6px;
+  background: white;
+  color: var(--fosc);
+  cursor: pointer;
+}
+
+button:hover {
+  border-color: var(--vermell);
+}
+
+button[aria-pressed='true'] {
+  background: var(--vermell);
+  border-color: var(--vermell);
+  color: white;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+button.principal {
+  justify-self: start;
+  background: var(--vermell);
+  border-color: var(--vermell);
+  color: white;
+  font-weight: 700;
+}
+
+/* Botó que només porta una icona (cor, paperera...) */
+.boto-icona {
+  padding: 4px;
+  border-color: transparent;
+  background: transparent;
+}
+
+.boto-icona[aria-pressed='true'] {
+  background: transparent;
+  border-color: transparent;
+}
+
+input:focus-visible,
+button:focus-visible {
+  outline: 3px solid var(--vermell);
+  outline-offset: 2px;
+}
+
+label {
+  display: grid;
+  gap: 4px;
+  font-size: 0.9rem;
+}
+
+input {
+  font: inherit;
+  padding: 6px 8px;
+  border: 1px solid var(--vora);
+  border-radius: 6px;
+}
+
+.targeta {
+  display: grid;
+  gap: 10px;
+  align-content: start;
+  padding: 16px;
+  background: white;
+  border: 1px solid var(--vora);
+  border-radius: 8px;
+}
+
+.targeta p {
+  margin: 0;
+}
+
+.fila {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.nota {
+  font-size: 0.9rem;
+  color: var(--gris);
+}
+
+.gran {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+code {
+  padding: 1px 5px;
+  background: #edf1f2;
+  border-radius: 4px;
+  font-size: 0.85rem;
+}
+
+.llista {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 6px;
+}
+
+.producte {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 8px 10px;
+  border: 1px solid var(--vora);
+  border-radius: 6px;
+}
+
+.capcalera {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 14px;
+  background: var(--fosc);
+  color: white;
+  border-radius: 6px;
+}
+
+.cistella {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.estrelles {
+  display: inline-flex;
+  gap: 2px;
+}
+
+.tiquet {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+  padding: 16px;
+  border: 2px dashed var(--vora);
+  border-radius: 8px;
+  background: white;
+}
+
+.tiquet p {
+  margin: 0 0 4px;
+}
+
+.resum {
+  font-weight: 700;
+}
+
+/* El botó de la dreta no s'encongeix: si no hi cap, és el nom el que salta de línia */
+.producte > button {
+  flex-shrink: 0;
+}
+
+.producte .fila {
+  flex-wrap: nowrap;
+}
+
+/* Comanda completa: el catàleg a l'esquerra i la cistella i el calendari a la dreta */
+.comanda {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 12px;
+  align-items: start;
+}
+
+.comanda > .targeta:first-child {
+  grid-row: span 2;
+}
+
+.comanda .tiquet {
+  grid-column: 1 / -1;
+}
+
+/* Al mòbil, tot en una sola columna */
+@media (max-width: 720px) {
+  .comanda {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Les icones mai no s'encongeixen dins d'un flex */
+svg {
+  flex-shrink: 0;
+}
+
+/* react-day-picker: canviem el color blau per defecte pel vermell de PratShop.
+   Posem «.targeta» davant perquè la nostra regla guanyi a la de style.css
+   de la llibreria, que s'importa DESPRÉS d'aquest fitxer. */
+.targeta .rdp-root {
+  --rdp-accent-color: var(--vermell);
+  --rdp-accent-background-color: #fde8e7;
+  --rdp-day-height: 36px;
+  --rdp-day-width: 36px;
+  --rdp-day_button-height: 34px;
+  --rdp-day_button-width: 34px;
+}

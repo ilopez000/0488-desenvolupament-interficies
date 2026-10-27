@@ -1,0 +1,29 @@
+{
+  "name": "sessio-13-components-de-llibreries",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "oxlint",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "lucide-react": "^1.61.0",
+    "react": "^19.3.1",
+    "react-day-picker": "^10.0.2",
+    "react-dom": "^19.3.1",
+    "react-qr-code": "^2.2.0",
+    "sonner": "^2.0.8"
+  },
+  "devDependencies": {
+    "@types/node": "^24.13.3",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.7",
+    "@vitejs/plugin-react": "^6.1.2",
+    "oxlint": "^1.89.0",
+    "typescript": "~6.0.2",
+    "vite": "^8.3.5"
+  }
+}
