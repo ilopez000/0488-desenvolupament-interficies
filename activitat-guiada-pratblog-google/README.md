@@ -44,6 +44,12 @@ npm test        # comprova els 12 TODO
 | 11 | `src/auth/RutaAdmin.tsx` | Protegir `/admin`: login, «no tens permís» o `<Outlet />` |
 | 12 | `src/components/Capcalera.tsx` | Mostrar qui hi ha connectat i el botó «Surt» |
 
+Per comprovar només un TODO, fes servir el seu número amb dues xifres:
+
+```bash
+npm test -- -t "TODO 04"
+```
+
 Cada fitxer de proves de `src/proves/` porta el número dels TODO que comprova. Les proves no es connecten mai a
 Google: fan servir un botó i uns tokens de mentida.
 

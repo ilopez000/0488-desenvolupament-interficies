@@ -20,7 +20,7 @@ function Provador() {
   )
 }
 
-describe('TODO 7 · iniciaSessio() obre i desa la sessió', () => {
+describe('TODO 07 · iniciaSessio() obre i desa la sessió', () => {
   it('posa la sessió a l’estat (es veu el nom)', async () => {
     renderAmbApp(<Provador />)
     await userEvent.click(screen.getByText('Entra'))
@@ -34,7 +34,7 @@ describe('TODO 7 · iniciaSessio() obre i desa la sessió', () => {
   })
 })
 
-describe('TODO 8 · tancaSessio() ho esborra tot', () => {
+describe('TODO 08 · tancaSessio() ho esborra tot', () => {
   it('buida l’estat, esborra el localStorage i crida googleLogout()', async () => {
     renderAmbApp(<Provador />)
     await userEvent.click(screen.getByText('Entra'))

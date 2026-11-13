@@ -2,7 +2,7 @@ import { describe, expect, it } from 'vitest'
 import { claimsAUsuari, creaSessio, descodificaCredencial } from '../auth/token.ts'
 import { claimsDeProva, jwtDeProva } from './jwt.ts'
 
-describe('TODO 4 · descodificaCredencial() llegeix el JWT', () => {
+describe('TODO 04 · descodificaCredencial() llegeix el JWT', () => {
   it('retorna els claims que hi ha dins del token', () => {
     const claims = claimsDeProva({ name: 'Pau Prova', email: 'pau@prova.cat' })
     const resultat = descodificaCredencial(jwtDeProva(claims))
@@ -15,7 +15,7 @@ describe('TODO 4 · descodificaCredencial() llegeix el JWT', () => {
   })
 })
 
-describe('TODO 5 · claimsAUsuari() passa dels claims de Google al nostre Usuari', () => {
+describe('TODO 05 · claimsAUsuari() passa dels claims de Google al nostre Usuari', () => {
   it('copia cada camp al seu lloc', () => {
     expect(claimsAUsuari(claimsDeProva())).toEqual({
       id: '1234567890',
@@ -27,7 +27,7 @@ describe('TODO 5 · claimsAUsuari() passa dels claims de Google al nostre Usuari
   })
 })
 
-describe('TODO 6 · creaSessio() construeix la sessió', () => {
+describe('TODO 06 · creaSessio() construeix la sessió', () => {
   it('guarda l’usuari, la credencial i la caducitat en mil·lisegons', () => {
     const claims = claimsDeProva()
     const credencial = jwtDeProva(claims)

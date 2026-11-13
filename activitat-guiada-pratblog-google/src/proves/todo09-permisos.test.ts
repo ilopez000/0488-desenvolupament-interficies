@@ -5,7 +5,7 @@ import type { Usuari } from '../auth/tipus.ts'
 const anna: Usuari = { id: '1', nom: 'Anna', email: 'Anna@Prova.cat', emailVerificat: true }
 const admins = ['anna@prova.cat']
 
-describe('TODO 9 · esAdministrador() decideix qui pot gestionar el blog', () => {
+describe('TODO 09 · esAdministrador() decideix qui pot gestionar el blog', () => {
   it('true si el correu (en minúscules) és a la llista i està verificat', () => {
     expect(esAdministrador(anna, admins)).toBe(true)
   })
