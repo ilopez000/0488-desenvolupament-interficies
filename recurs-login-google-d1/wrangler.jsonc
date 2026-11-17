@@ -1,0 +1,28 @@
+// Configuració de Cloudflare · Recurs 0488 · Login amb Google + D1
+// Documentació: https://developers.cloudflare.com/workers/wrangler/configuration/
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	// Nom del Worker (i de la web: https://<name>.<el-teu-subdomini>.workers.dev)
+	"name": "login-google-d1",
+	// L'API (backend): s'executa als servidors de Cloudflare
+	"main": "worker/index.ts",
+	"compatibility_date": "2026-11-01",
+	// Els fitxers de React. Les adreces que no són /api/ tornen index.html (React Router)
+	"assets": {
+		"not_found_handling": "single-page-application",
+		"run_worker_first": ["/api/*"]
+	},
+	"observability": {
+		"enabled": true
+	},
+	// Base de dades D1: al codi del Worker s'hi accedeix amb env.DB
+	"d1_databases": [
+		{
+			"binding": "DB",
+			"database_name": "login-google-d1-db",
+			// En local pot quedar així. Per publicar-ho, posa-hi l'id de la teva base de dades
+			// (npx wrangler d1 create login-google-d1-db)
+			"database_id": "00000000-0000-0000-0000-000000000000"
+		}
+	]
+}
