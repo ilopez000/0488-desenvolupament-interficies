@@ -17,7 +17,7 @@ fetch('/api/…', Bearer credencial)     (firma de Google, aud, exp)          IN
 
 ## Arrencar-lo
 
-**A Windows:** doble clic a `arrenca.bat` i tria la base de dades:
+**A Windows:** `prepara-classe.bat` (només un cop: instal·la els paquets, crea la taula a la D1 local i hi posa 4 usuaris d'exemple). Després, doble clic a `arrenca.bat` i tria la base de dades:
 
 | Opció | Base de dades | Què cal |
 |---|---|---|
@@ -47,6 +47,7 @@ npm run dev                     # http://localhost:5173  (npm run dev:remota →
 | Ordre | Què fa |
 |---|---|
 | `npm run db:local` / `npm run db:remote` | Aplica les migracions (crea la taula `users`) a la D1 local / de Cloudflare |
+| `npm run db:exemple` | Afegeix 4 usuaris inventats a la D1 local (per a la classe) |
 | `npm run db:veure` / `npm run db:veure-remota` | Mostra el contingut de la taula `users` |
 | `npm run dev` / `npm run dev:remota` | Web + API amb la D1 local / de Cloudflare |
 | `npm run deploy` | Compila i publica el Worker |

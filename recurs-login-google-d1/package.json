@@ -13,6 +13,7 @@
     "cf-typegen": "wrangler types",
     "db:local": "wrangler d1 migrations apply login-google-d1-db --local",
     "db:remote": "wrangler d1 migrations apply login-google-d1-db --remote",
+    "db:exemple": "wrangler d1 execute login-google-d1-db --local --file exemple/usuaris_exemple.sql",
     "db:veure": "wrangler d1 execute login-google-d1-db --local --command \"SELECT id, email, alies, cicle, visites, ultim_acces FROM users\"",
     "db:veure-remota": "wrangler d1 execute login-google-d1-db --remote --command \"SELECT id, email, alies, cicle, visites, ultim_acces FROM users\""
   },

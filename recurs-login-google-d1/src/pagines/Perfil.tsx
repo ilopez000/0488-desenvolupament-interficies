@@ -2,6 +2,7 @@
 import { useState, type FormEvent } from 'react'
 import { useNavigate } from 'react-router'
 import { ErrorApi, desarJo, esborrarJo, llegirJo } from '../api'
+import Avatar from '../components/Avatar'
 import { CICLES } from '../config'
 import { useSessio } from '../sessio/useSessio'
 import type { CanvisUsuari } from '../tipus'
@@ -69,7 +70,7 @@ export default function Perfil() {
         <h2>Dades de Google</h2>
         <p className="nota">Les posa el servidor a cada inici de sessió. No es poden editar.</p>
         <div className="google-dades">
-          {usuari.foto && <img src={usuari.foto} alt="" referrerPolicy="no-referrer" />}
+          <Avatar foto={usuari.foto} nom={usuari.nom} color={usuari.color} mida={56} />
           <div>
             <strong>{usuari.nom}</strong>
             <div>{usuari.email}</div>

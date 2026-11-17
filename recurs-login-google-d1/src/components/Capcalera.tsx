@@ -1,4 +1,5 @@
 import { NavLink } from 'react-router'
+import Avatar from './Avatar'
 import { useSessio } from '../sessio/useSessio'
 
 export default function Capcalera() {
@@ -18,7 +19,7 @@ export default function Capcalera() {
             <NavLink to="/usuaris">Usuaris</NavLink>
           </nav>
           <span className="qui">
-            {usuari.foto && <img src={usuari.foto} alt="" referrerPolicy="no-referrer" />}
+            <Avatar foto={usuari.foto} nom={usuari.alies} color={usuari.color} mida={30} />
             {usuari.alies}
           </span>
           <button onClick={tancaSessio}>Surt</button>

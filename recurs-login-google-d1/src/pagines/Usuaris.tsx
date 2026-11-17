@@ -1,6 +1,7 @@
 // Consultar la taula users: GET /api/usuaris (només camps públics)
 import { useEffect, useState } from 'react'
 import { llistarUsuaris } from '../api'
+import Avatar from '../components/Avatar'
 import { useSessio } from '../sessio/useSessio'
 import type { UsuariPublic } from '../tipus'
 
@@ -25,7 +26,7 @@ export default function Usuaris() {
       <ul className="usuaris">
         {usuaris?.map((u) => (
           <li key={`${u.alies}-${u.creat}`} className="targeta" style={{ borderTopColor: u.color }}>
-            {u.foto && <img src={u.foto} alt="" referrerPolicy="no-referrer" />}
+            <Avatar foto={u.foto} nom={u.alies} color={u.color} mida={48} />
             <strong>{u.alies}</strong>
             <span className="etiqueta">{u.cicle}</span>
             {u.bio && <p>{u.bio}</p>}
