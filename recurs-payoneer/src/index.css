@@ -1,0 +1,76 @@
+:root {
+  --taronja: #ff4800;
+  --blau: #1d3557;
+  --gris: #f3f4f7;
+  --vora: #d8dbe2;
+  --ok: #1b8a4b;
+  --error: #c62828;
+  --espera: #b26a00;
+  font-family: system-ui, 'Segoe UI', sans-serif;
+  color: #1f2430;
+  background: var(--gris);
+}
+* { box-sizing: border-box; }
+body { margin: 0; }
+main { max-width: 1040px; margin: 0 auto; padding: 24px; }
+h1 { margin-top: 0; }
+a { color: var(--blau); }
+code { background: #e7e9ef; padding: 1px 5px; border-radius: 4px; }
+
+.capcalera { display: flex; align-items: center; gap: 24px; padding: 12px 24px; background: var(--blau); color: #fff; }
+.capcalera a { color: #fff; text-decoration: none; }
+.capcalera nav { display: flex; gap: 16px; flex: 1; }
+.capcalera nav a.active { text-decoration: underline; }
+.marca { font-weight: 700; font-size: 1.2rem; }
+.mode { font-size: 0.8rem; padding: 4px 10px; border-radius: 99px; }
+.mode-simulacio { background: #fff4d6; color: #6b4b00; }
+.mode-sandbox { background: #d8f5e3; color: #0d5c31; }
+
+.botiga { display: grid; grid-template-columns: 1fr 340px; gap: 24px; align-items: start; }
+@media (max-width: 800px) { .botiga { grid-template-columns: 1fr; } }
+.productes { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 16px; }
+.producte { background: #fff; border: 1px solid var(--vora); border-radius: 12px; padding: 16px; display: flex; flex-direction: column; gap: 6px; }
+.emoji { font-size: 2.4rem; }
+.quantitat { display: flex; align-items: center; gap: 12px; margin-top: 6px; }
+.quantitat button { width: 34px; height: 34px; border-radius: 50%; border: 1px solid var(--vora); background: #fff; font-size: 1.1rem; cursor: pointer; }
+
+.caixa, .panell, .integrat form, .formulari-payoneer { background: #fff; border: 1px solid var(--vora); border-radius: 12px; padding: 18px; }
+.caixa { display: flex; flex-direction: column; gap: 10px; position: sticky; top: 16px; }
+.caixa h2 { margin: 0; font-size: 1.1rem; }
+label { display: flex; flex-direction: column; font-size: 0.85rem; gap: 4px; }
+input { padding: 9px; border: 1px solid var(--vora); border-radius: 6px; font-size: 0.95rem; }
+.resum { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+.resum td:last-child { text-align: right; }
+.resum tfoot td { font-weight: 700; border-top: 1px solid var(--vora); padding-top: 6px; }
+.buit, .nota { color: #6a7080; font-size: 0.9rem; }
+
+button.principal, .boto { display: inline-block; text-align: center; padding: 11px 14px; border-radius: 8px; border: 0; font-size: 0.95rem; cursor: pointer; text-decoration: none; }
+.principal { background: var(--taronja); color: #fff; }
+.principal:disabled { background: #f3b9a1; cursor: not-allowed; }
+.secundari { background: #fff; color: var(--blau); border: 1px solid var(--blau); }
+.desactivat { pointer-events: none; opacity: 0.45; }
+.error { color: var(--error); font-weight: 600; }
+.avis { background: #fff4d6; border: 1px solid #f0c04a; border-radius: 8px; padding: 8px 10px; font-size: 0.85rem; }
+
+.integrat { max-width: 480px; }
+.formulari-simulat { display: flex; flex-direction: column; gap: 10px; }
+.fila { display: flex; gap: 10px; }
+.fila label { flex: 1; }
+
+.dues-columnes { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px; }
+@media (max-width: 700px) { .dues-columnes { grid-template-columns: 1fr; } }
+.panell h2 { margin: 0 0 4px; font-size: 1rem; }
+.confirmat { border-color: var(--ok); }
+dl { margin: 0; font-size: 0.85rem; }
+dl div { display: flex; justify-content: space-between; gap: 8px; padding: 4px 0; border-bottom: 1px dashed #e4e6eb; }
+dt { color: #6a7080; }
+dd { margin: 0; font-family: ui-monospace, monospace; word-break: break-all; text-align: right; }
+
+.etiqueta { padding: 2px 9px; border-radius: 99px; font-size: 0.8rem; font-family: system-ui, sans-serif; font-weight: 600; }
+.etiqueta-ok { background: #d8f5e3; color: var(--ok); }
+.etiqueta-error { background: #fde0e0; color: var(--error); }
+.etiqueta-espera { background: #fff0d1; color: var(--espera); }
+
+.taula { width: 100%; border-collapse: collapse; background: #fff; border-radius: 12px; overflow: hidden; font-size: 0.9rem; }
+.taula th, .taula td { padding: 9px 12px; border-bottom: 1px solid #eceef2; text-align: left; }
+.taula th { background: #e9ecf3; }
