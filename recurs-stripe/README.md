@@ -11,7 +11,7 @@ Una botiga d'un sol producte feta amb **React 19 + TypeScript + Vite** i un **se
 
 ## Arrencar-lo
 
-**A Windows:** doble clic a `arrenca.bat`. La primera vegada crea el `.env` i l'obre perquè hi enganxis la clau; la segona instal·la els paquets, engega el servidor i la web i obre el navegador.
+**A Windows:** `prepara-classe.bat` instal·la els paquets abans de la classe (no cal la clau). Després, doble clic a `arrenca.bat`. La primera vegada crea el `.env` i l'obre perquè hi enganxis la clau; la segona instal·la els paquets, engega el servidor i la web i obre el navegador.
 
 **A mà (qualsevol sistema):**
 
